@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Honore Johnson | Orchestrating fair pay in global supply chains</title>
+<meta name="description" content="Honore Johnson works with companies, funders and governments on living wages in global supply chains.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%2314213D' stroke='%23C9A961' stroke-width='3'/%3E%3Ctext x='32' y='41' font-family='Georgia,serif' font-size='24' fill='%23F6F4EF' text-anchor='middle'%3EHJ%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#14213D;--paper:#F6F4EF;--gold:#C9A961;--ink:#14213D;--muted:#5B6478;--body:#4A5263;--line:#E4E1D8;--soft:#D5DAE5}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:'Source Sans 3','Helvetica Neue',Arial,sans-serif}
+a{color:var(--ink)}
+a:focus-visible,button:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.wrap{max-width:1180px;margin:0 auto;padding-left:32px;padding-right:32px}
+.serif{font-family:Newsreader,Georgia,serif;font-weight:400}
+.navy{background:var(--navy);color:var(--paper)}
+header .wrap{display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between;padding-top:18px;padding-bottom:18px}
+.brand{display:inline-flex;align-items:center;gap:12px;text-decoration:none;color:var(--paper)}
+.mono{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border:1px solid var(--gold);border-radius:50%;font-family:Newsreader,Georgia,serif;font-size:17px}
+.brand-name{font-family:Newsreader,Georgia,serif;font-size:20px}
+nav{display:flex;flex-wrap:wrap;gap:4px}
+nav a{text-decoration:none;padding:12px 14px;font-size:15px;color:var(--soft)}
+nav a:hover{color:#fff}
+.hero{padding-top:72px;padding-bottom:96px;display:flex;flex-direction:column;gap:24px}
+.kicker{margin:0;font-size:14px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
+h1{margin:0;font-size:clamp(2.4rem,4.6vw,3.9rem);line-height:1.12;letter-spacing:-.01em;max-width:18ch}
+.lead{margin:0;font-size:19px;line-height:1.65;color:var(--soft);max-width:38rem}
+.btns{display:flex;flex-wrap:wrap;gap:12px;padding-top:8px}
+.btn{text-decoration:none;display:inline-flex;align-items:center;min-height:48px;padding:0 22px;border-radius:4px;font-size:15px}
+.btn-solid{background:var(--paper);color:var(--ink);font-weight:600}
+.btn-line{border:1px solid #8A97B3;color:var(--paper);font-weight:500}
+h2{margin:0;font-size:36px}
+.section{padding-top:80px;padding-bottom:16px}
+.who{display:flex;flex-direction:column;gap:32px}
+.grid4{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px}
+.card{background:#fff;border:1px solid var(--line);border-radius:4px;padding:28px;display:flex;flex-direction:column;gap:12px}
+.label{font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.who p{margin:0;font-family:Newsreader,Georgia,serif;font-size:21px;line-height:1.35}
+.about{display:flex;flex-wrap:wrap;gap:48px}
+.about h2{flex:1 1 260px}
+.about div{flex:999 1 520px;min-width:0;display:flex;flex-direction:column;gap:18px;font-size:18px;line-height:1.7;color:#2E3A52}
+.about p{margin:0}
+.lib{padding-top:64px;padding-bottom:96px;display:flex;flex-direction:column;gap:36px}
+.lib-head{display:flex;flex-wrap:wrap;gap:20px;align-items:flex-end;justify-content:space-between;border-bottom:1px solid #DCD8CD;padding-bottom:24px}
+.count{margin:6px 0 0;font-size:15px;color:var(--muted)}
+.filters{display:flex;flex-wrap:wrap;gap:8px}
+.filters button{min-height:32px;padding:0 13px;border-radius:999px;font:inherit;font-size:13px;cursor:pointer;background:#fff;color:var(--ink);border:1px solid #CFCABE}
+.filters button[aria-pressed="true"]{background:var(--navy);color:var(--paper);border-color:var(--navy)}
+.tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:24px}
+.tile{background:#fff;border:1px solid var(--line);border-radius:4px;padding:28px;display:flex;flex-direction:column;gap:14px;min-height:240px}
+.tile[hidden]{display:none}
+.tile-top{display:flex;justify-content:space-between;gap:12px}
+.tile h3{margin:0;font-family:Newsreader,Georgia,serif;font-weight:500;font-size:22px;line-height:1.25}
+.tile p{margin:0;font-size:15px;line-height:1.55;color:var(--body);flex-grow:1}
+.tile-foot{border-top:1px solid #EEEBE3;padding-top:14px;display:flex;justify-content:space-between;align-items:center;gap:12px;min-height:58px}
+.org{font-size:14px;color:var(--muted)}
+.tile-foot a{display:inline-flex;align-items:center;min-height:44px;font-size:15px;font-weight:600;text-underline-offset:4px}
+.contact{display:flex;flex-wrap:wrap;gap:24px;align-items:center;justify-content:space-between;padding-top:72px;padding-bottom:72px}
+.contact h2{font-size:clamp(1.8rem,3vw,2.4rem)}
+.foot{border-top:1px solid #2C3A5C;display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;font-size:14px;color:#B9C1D3;padding-top:20px;padding-bottom:28px}
+@media (max-width:600px){.wrap{padding-left:20px;padding-right:20px}.hero{padding-top:48px;padding-bottom:64px}}
+</style>
+</head>
+<body>
+<header class="navy">
+<div class="wrap">
+<a class="brand" href="#top"><span class="mono" aria-hidden="true">HJ</span><span class="brand-name">Honore Johnson</span></a>
+<nav aria-label="Main">
+<a href="#work-with">Work with me</a>
+<a href="#about">About</a>
+<a href="#library">Library</a>
+<a href="#contact">Contact</a>
+</nav>
+</div>
+</header>
+
+<main>
+<section id="top" class="navy">
+<div class="wrap hero">
+<p class="kicker">Living wages · Supply chains · Philanthropy</p>
+<h1 class="serif">Orchestrating fair pay in global supply chains.</h1>
+<p class="lead">I bring companies, funders and governments together around one goal: workers earning a living wage.</p>
+<div class="btns">
+<a class="btn btn-solid" href="#contact">Work with me</a>
+<a class="btn btn-line" href="#library">Browse the library</a>
+</div>
+</div>
+</section>
+
+<section id="work-with">
+<div class="wrap section who">
+<h2 class="serif">Who I work with</h2>
+<div class="grid4">
+<div class="card"><span class="label">Companies and retailers</span><p>You’ve committed to living wages and need a credible plan, solid data and suppliers on board.</p></div>
+<div class="card"><span class="label">Funders and philanthropists</span><p>You want your giving to raise workers’ pay, and to know that it did.</p></div>
+<div class="card"><span class="label">Governments and multilaterals</span><p>You need business, unions and civil society moving in the same direction.</p></div>
+<div class="card"><span class="label">NGOs and initiatives</span><p>You want sharper methods, stronger programs and the right partners at the table.</p></div>
+</div>
+</div>
+</section>
+
+<section id="about">
+<div class="wrap section about">
+<h2 class="serif">About</h2>
+<div>
+<p>I work on living wages in global supply chains. At IDH I built the first version of the Salary Matrix, now used by more than 5,000 producers, and coordinated work on the Roadmap on Living Wages.</p>
+<p>Today I advise companies, funders and international organizations as an independent consultant, based in Honduras. I studied at Cornell ILR and the LSE Marshall Institute.</p>
+</div>
+</div>
+</section>
+
+<section id="library">
+<div class="wrap lib">
+<div class="lib-head">
+<div>
+<h2 class="serif">Library of tools, papers and talks</h2>
+<p class="count" id="count" aria-live="polite"></p>
+</div>
+<div class="filters" role="group" aria-label="Filter by type">
+<button type="button" data-filter="all" aria-pressed="true">All</button>
+<button type="button" data-filter="tool" aria-pressed="false">Tools</button>
+<button type="button" data-filter="paper" aria-pressed="false">Papers</button>
+<button type="button" data-filter="article" aria-pressed="false">Articles</button>
+<button type="button" data-filter="talk" aria-pressed="false">Talks &amp; events</button>
+<button type="button" data-filter="program" aria-pressed="false">Programs</button>
+</div>
+</div>
+<div class="tiles" id="tiles"></div>
+</div>
+</section>
+</main>
+
+<footer id="contact" class="navy">
+<div class="wrap contact">
+<h2 class="serif">Let’s talk about your project.</h2>
+<div class="btns" style="padding-top:0">
+<a class="btn btn-solid" href="mailto:Honore@HonoreJohnson.com">Email me</a>
+<a class="btn btn-line" href="https://linkedin.com/in/honorej">LinkedIn</a>
+</div>
+</div>
+<div class="wrap foot"><span>© 2026 Honore Johnson</span><span>Strong LLC</span></div>
+</footer>
+
+<script>
+/* To add or edit an item: change this list. Leave href empty if there is no link yet. */
+const items = [
+  { cat: 'tool', type: 'Tool', year: '', title: 'Salary Matrix', desc: 'Free tool that compares what workers earn with a living wage. I built the first version.', org: 'IDH', href: 'https://www.idhsustainabletrade.com/living-wage-platform/salary-matrix/', cta: 'View' },
+  { cat: 'tool', type: 'Framework', year: '2021', title: 'Roadmap on Living Wages', desc: 'Five steps for companies to act on living wages. I coordinated IDH’s work on it.', org: 'IDH', href: 'https://www.idhsustainabletrade.com/uploaded/2021/03/IDH-Roadmap-on-Living-Wages.pdf', cta: 'Read' },
+  { cat: 'tool', type: 'Method', year: '', title: 'Salary Matrix audit protocols', desc: 'Protocols for checking living wage data, tested with auditors in the field.', org: 'IDH', href: '', cta: '' },
+  { cat: 'tool', type: 'Method', year: '', title: 'Worker premium method', desc: 'A way to calculate the premium that closes the gap, so buyers have numbers they trust.', org: 'IDH', href: '', cta: '' },
+  { cat: 'tool', type: 'Data', year: '', title: 'Living wage dashboards for retailers', desc: 'Live payroll data from banana suppliers that brought procurement teams into the conversation.', org: 'IDH', href: '', cta: '' },
+  { cat: 'tool', type: 'Criteria', year: '2024', title: 'Recognition criteria for living wage methods', desc: 'The criteria IDH uses to recognize credible living wage estimate methods.', org: 'IDH', href: 'https://www.idhsustainabletrade.com/uploaded/2024/10/IDH_Recognition_Criteria_7.9.pdf', cta: 'Read' },
+  { cat: 'paper', type: 'Paper', year: '2026', title: 'Poverty Wages and the Persistence of Forced Labour', desc: 'Co-author, with Verité. Living Wage Links series.', org: 'IDH', href: '', cta: '' },
+  { cat: 'paper', type: 'Paper', year: '2026', title: 'Poverty Wages and the Persistence of Child Labour', desc: 'Co-author, with ChildFund. Living Wage Links series.', org: 'IDH', href: '', cta: '' },
+  { cat: 'paper', type: 'Brief', year: '2024', title: 'Integrating ILO’s guidance into IDH’s work on living wages', desc: 'How IDH updated its living wage approach after the ILO expert meeting.', org: 'IDH', href: 'https://idhsustainabletrade.com/uploaded/2025/02/Outcomes-of-ILO-expert-meeting-and-IDH-work-on-LW-16-10-24.pdf', cta: 'Read' },
+  { cat: 'paper', type: 'Journal article', year: '2015', title: 'Adopting an Employment Arbitration Process', desc: 'On how employers can set up a fair arbitration process.', org: 'Dispute Resolution Journal', href: '', cta: '' },
+  { cat: 'article', type: 'Article', year: '', title: 'Rising global inequality demands action on living wages', desc: 'Why living wages matter for inclusive growth. With Jordy van Honk.', org: 'IDH', href: 'https://idh.org/news/rising-global-inequality-demands-action-on-living-wages', cta: 'Read' },
+  { cat: 'article', type: 'Blog', year: '', title: 'Honduras’s cash transfers', desc: 'A look at Honduras’s cash transfer programs.', org: 'LSE Int’l Development blog', href: '', cta: '' },
+  { cat: 'talk', type: 'Event', year: '2026', title: 'Living Wage and Living Income Summit', desc: 'Organized the Rotterdam summit, co-hosted with the UN Global Compact.', org: 'IDH', href: 'https://idh.org/events/living-wage-living-income-summit-2026', cta: 'View' },
+  { cat: 'talk', type: 'Event', year: '2025', title: 'Living wage session at the World Social Summit', desc: 'Organized IDH’s session in Doha and supported advocacy for the political declaration.', org: 'IDH', href: '', cta: '' },
+  { cat: 'talk', type: 'Talk', year: '2021', title: 'OECD living wage workshop', desc: 'Speaker on what makes living wage estimates credible, with WageIndicator.', org: 'OECD', href: 'https://wageindicator.org/documents/oecd-living-wage-workshop.pdf', cta: 'Read' },
+  { cat: 'talk', type: 'Podcast', year: '', title: 'Living wages: where we are and what comes next', desc: 'IDH podcast with Jordy van Honk and Marcel Vernooij.', org: 'IDH', href: 'https://idh.org/news/podcast-living-wage-where-we-stand-and-how-we-can-progress', cta: 'Listen' },
+  { cat: 'talk', type: 'Webinar', year: '', title: 'Ensuring a living wage across supply chains', desc: 'Speaker on why business should act. With the UN Global Compact and Unilever.', org: 'Council for Inclusive Capitalism', href: 'https://www.inclusivecapitalism.com/?p=833959', cta: 'View' },
+  { cat: 'talk', type: 'Panel', year: '', title: 'Living Income and Living Wage conference, Brussels', desc: 'Moderated the panel on governments as partners.', org: 'Fairtrade', href: 'https://fairtrade-advocacy.org/posts/166', cta: 'View' },
+  { cat: 'talk', type: 'Webinar', year: '2019', title: 'How can you close the living wage gap?', desc: 'IDH’s first open webinar on its living wage strategy.', org: 'IDH', href: 'https://idh.org/news/open-webinar-how-can-you-close-the-living-wage-gap', cta: 'View' },
+  { cat: 'program', type: 'Training', year: '', title: 'Unilever supplier program', desc: 'Onboarding materials and learning groups that brought 200+ suppliers up to speed.', org: 'IDH, Unilever', href: '', cta: '' },
+  { cat: 'program', type: 'Training', year: '', title: 'Field trainings', desc: 'Living wage trainings for suppliers and staff in Vietnam, Kenya and Costa Rica.', org: 'IDH', href: '', cta: '' },
+  { cat: 'program', type: 'Advisory', year: '', title: 'Worker grievance mechanisms', desc: 'Advisor to IDH’s LABS program on grievance mechanisms for workers.', org: 'IDH', href: '', cta: '' }
+];
+
+const tilesEl = document.getElementById('tiles');
+const countEl = document.getElementById('count');
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+tilesEl.innerHTML = items.map(i => `
+  <article class="tile" data-cat="${i.cat}">
+    <div class="tile-top label"><span>${esc(i.type)}</span><span>${esc(i.year)}</span></div>
+    <h3>${esc(i.title)}</h3>
+    <p>${esc(i.desc)}</p>
+    <div class="tile-foot">
+      <span class="org">${esc(i.org)}</span>
+      ${i.href ? `<a href="${esc(i.href)}" target="_blank" rel="noopener">${esc(i.cta || 'View')}<span class="sr-only" style="position:absolute;left:-9999px"> ${esc(i.title)} (opens in new tab)</span></a>` : ''}
+    </div>
+  </article>`).join('');
+
+function applyFilter(f) {
+  let shown = 0;
+  tilesEl.querySelectorAll('.tile').forEach(t => {
+    const on = f === 'all' || t.dataset.cat === f;
+    t.hidden = !on;
+    if (on) shown++;
+  });
+  document.querySelectorAll('.filters button').forEach(b => b.setAttribute('aria-pressed', b.dataset.filter === f ? 'true' : 'false'));
+  countEl.textContent = `${shown} of ${items.length} items`;
+}
+document.querySelectorAll('.filters button').forEach(b => b.addEventListener('click', () => applyFilter(b.dataset.filter)));
+applyFilter('all');
+</script>
+</body>
+</html>
